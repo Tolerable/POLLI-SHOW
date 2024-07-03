@@ -1,0 +1,23 @@
+# Ignore all POLLI-SHOW-*.py files except POLLI-SHOW.py
+POLLI-SHOW-*.py
+!POLLI-SHOW.py
+
+# Ignore other common files and folders
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.vscode/
+.idea/
+.DS_Store
+SD_IMAGES/
+
+# Include ASSETS folder
+!./ASSETS
+
+# Include README.md
+!README.md
+
+# Include LICENSE
+!LICENSE
