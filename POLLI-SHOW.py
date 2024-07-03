@@ -179,7 +179,6 @@ def save_image(image, path):
 
     return image_path
 
-
 # Database functions
 def initialize_db():
     conn = sqlite3.connect('prompts.db')
@@ -243,7 +242,6 @@ def mod_check(prompt):
     except Exception as e:
         print(f"An error occurred during moderation check: {e}")
         return False, "An error occurred during the moderation check. Please try again later."
-
 
 # Scheduler to generate art based on prompts
 @tasks.loop(minutes=2)  # Default interval, adjusted later
